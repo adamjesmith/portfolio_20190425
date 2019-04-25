@@ -22,31 +22,34 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style src="./styles/main.scss"></style>
 
-h1, h2 {
-  font-weight: normal;
-}
+<style lang="scss">
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+  h1, h2 {
+    font-weight: normal;
+  }
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
 
-a {
-  color: #42b983;
-}
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  a {
+    color: pink;
+  }
+
 </style>
