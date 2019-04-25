@@ -2,15 +2,17 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 
+
+import about from './components/about.vue'
+import home from './components/home.vue'
+
 Vue.use(VueRouter)
 
-const Home = { template: '<div><h2>Home Page</h2></div>' }
-const About = { template: '<div><h2>About Page</h2></div>' }
 const Contact = { template: '<div><h2>Contact Page</h2></div>' }
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/about', component: About },
+  { path: '/', component: home },
+  { path: '/about', component: about },
   { path: '/contact', component: Contact }
 ]
 

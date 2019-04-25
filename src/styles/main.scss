@@ -6,5 +6,19 @@
  */
  @charset 'UTF-8';
 
+/**
+ * Config.
+ */
+@import './config/reset.scss';
 @import './config/colours.scss';
 @import './config/mixins.scss';
+@import './config/grid.scss';
+@import './config/spacing.scss';
+@import './config/typography.scss';
+
+
+/**
+ * Base.
+ */
+ @import './base/body.scss';
+ @import './base/typography.scss';

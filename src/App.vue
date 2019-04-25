@@ -7,7 +7,13 @@
       <router-link to="/about">About</router-link>
       <router-link to="/contact">Contact</router-link>
     </p>
-    <router-view></router-view>
+    <transition
+        name="fade"
+        enter-active-class="animated fadeInUp"
+        leave-active-class="animated zoomOut"
+      >
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -22,34 +28,8 @@ export default {
 }
 </script>
 
-<style src="./styles/main.scss"></style>
-
-<style lang="scss">
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
-
-  h1, h2 {
-    font-weight: normal;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  a {
-    color: pink;
-  }
-
+<style>
+  @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
 </style>
+
+<style src="./styles/main.scss"></style>
