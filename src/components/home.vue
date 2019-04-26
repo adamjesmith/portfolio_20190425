@@ -20,6 +20,19 @@ export default {
     return {
       msg: "New home page"
     };
+  },
+  // lifecycle hooks
+  beforeCreate() {
+    console.log('Home beforeCreate()')
+  },
+  created() {
+    console.log('Home created()')
+  },
+  beforeMount() {
+    console.log('Home beforeMount()')
+  },
+  mounted() {
+    console.log('Home mounted()')
   }
 };
 </script>
