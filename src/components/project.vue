@@ -1,8 +1,6 @@
 <template>
   <div class="hello">
     <h1>Project with id {{projectName}}</h1>
-    <!-- <img src="./images/project/{{projectName}}/test.jpg"> -->
-    <!-- <img v-attr="src: ./images/project/"+{{projectName}}+"/test.jpg"> -->
     
   </div>
 </template>

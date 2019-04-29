@@ -32,6 +32,7 @@ export default {
 
 <style>
   @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
+  @import "https://unpkg.com/flickity@2/dist/flickity.min.css";
 </style>
 
 <style src="./styles/main.scss"></style>

@@ -1,7 +1,7 @@
 [
     {
         "id": "0",
-        "title": "Every Second Counts",
+        "title": "Project 1",
         "path": "every-second-counts",
         "slider-image-src": "test.jpg",
         "short-description": "",
@@ -17,7 +17,7 @@
     },
     {
         "id": "1",
-        "title": "Butler & Stag",
+        "title": "Project 2",
         "path": "butler-and-stag",
         "slider-image-src": "test.jpg",
         "short-description": "",

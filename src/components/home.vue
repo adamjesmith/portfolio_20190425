@@ -49,15 +49,19 @@
     },
     mounted() {
       console.log('Home mounted()');
-      console.log(document.querySelector('.main-carousel'));
-      //
+      this.buildSlider();
     },
     methods: {
-      getImgURL: (item, img) => {
+      getImgURL: function(item, img) {
         return require(`../images/projects/${item.path}/${img}`);
       },
-      getprojectLink: (item) => {
+      getprojectLink: function(item) {
         return `/project/${item.path}`;
+      },
+      buildSlider: function() {
+        const slider = new this.$flickity( '.main-carousel', {
+          // options
+        });
       },
     }
   };
