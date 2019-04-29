@@ -4,7 +4,9 @@ import App from './App.vue'
 
 
 import about from './components/about.vue'
+import contact from './components/contact.vue'
 import home from './components/home.vue'
+import project from './components/project.vue'
 
 Vue.use(VueRouter)
 
@@ -13,7 +15,8 @@ const Contact = { template: '<div><h2>Contact Page</h2></div>' }
 const routes = [
   { path: '/', component: home },
   { path: '/about', component: about },
-  { path: '/contact', component: Contact }
+  { path: '/contact', component: contact },
+  { path: '/project/:id', component: project },
 ]
 
 const router = new VueRouter({
