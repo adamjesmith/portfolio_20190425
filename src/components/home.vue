@@ -6,15 +6,13 @@
 
             <h2>{{msg}}</h2>
 
-            <ul>
-              <li v-for="item in items" v-bind:key="item.id">
-                <h3>{{item.title}}</h3>
-
+            <div class="main-carousel">
+              <div v-for="item in items" v-bind:key="item.id" class="carousel-cell">
                 <img :src="getImgURL(item, item['slider-image-src'])" alt="">
+                <h3>{{item.title}}</h3>
                 <router-link :to="getprojectLink(item)">View Project</router-link>
-
-              </li>
-            </ul>
+              </div>
+            </div>
             
             <p>Yet there was bitterness. And bitterness not only invaded us from the world; it welled up also within our own magic circle. For horror at our futility, at our own unreality, and not only at the world’s delirium, had driven me out on to the hill.</p>
             <p>We were always hurrying from one little urgent task to another, but the upshot was insubstantial. Had we, perhaps, misconceived our whole existence? Were we, as it were, living from false premises? And in particular, this partnership of ours, this seemingly so well-based fulcrum for activity in the world, was it after all nothing but a little eddy of complacent and ingrown domesticity, ineffectively whirling on the surface of the great flux, having in itself no depth of being, and no significance? Had we perhaps after all deceived ourselves? Behind those rapt windows did we, like so many others, indeed live only a dream? In a sick world even the hale are sick. And we two, spinning our little life mostly by rote, seldom with clear cognizance, seldom with firm intent, were products of a sick world.</p>
@@ -51,6 +49,8 @@
     },
     mounted() {
       console.log('Home mounted()');
+      console.log(document.querySelector('.main-carousel'));
+      //
     },
     methods: {
       getImgURL: (item, img) => {
