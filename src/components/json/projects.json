@@ -1,0 +1,34 @@
+[
+    {
+        "id": "0",
+        "title": "Every Second Counts",
+        "path": "every-second-counts",
+        "slider-image-src": "test.jpg",
+        "short-description": "",
+        "video-src": "",
+        "project-image-1-src": "",
+        "project-image-2-src": "",
+        "project-hero-src": "",
+        "project-mobile-1-src": "",
+        "project-mobile-2-src": "",
+        "dev-details": "",
+        "dev-key-roles": "",
+        "site-link": "www.apple.com"
+    },
+    {
+        "id": "1",
+        "title": "Butler & Stag",
+        "path": "butler-and-stag",
+        "slider-image-src": "test.jpg",
+        "short-description": "",
+        "video-src": "",
+        "project-image-1-src": "",
+        "project-image-2-src": "",
+        "project-hero-src": "",
+        "project-mobile-1-src": "",
+        "project-mobile-2-src": "",
+        "dev-details": "",
+        "dev-key-roles": "",
+        "site-link": "www.google.com"
+    }
+]

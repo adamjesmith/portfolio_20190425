@@ -1,13 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
-
+import axios from 'axios'
 
 import about from './components/about.vue'
 import contact from './components/contact.vue'
 import home from './components/home.vue'
 import project from './components/project.vue'
 
+Vue.prototype.$axios = axios
 Vue.use(VueRouter)
 
 const Contact = { template: '<div><h2>Contact Page</h2></div>' }
@@ -15,7 +16,7 @@ const Contact = { template: '<div><h2>Contact Page</h2></div>' }
 const routes = [
   { path: '/', component: home },
   { path: '/about', component: about },
-  { path: '/contact', component: contact },
+  { path: '/contact', component: Contact },
   { path: '/project/:id', component: project },
 ]
 
