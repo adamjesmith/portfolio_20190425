@@ -7,6 +7,13 @@
  @charset 'UTF-8';
 
 /**
+ * Vendors.
+ */
+@import './vendors/animate-css';
+@import './vendors/flickity';
+
+
+/**
  * Config.
  */
 @import './config/reset.scss';
@@ -15,6 +22,10 @@
 @import './config/grid.scss';
 @import './config/spacing.scss';
 @import './config/typography.scss';
+
+/**
+ * Helpers.
+ */
 
 
 /**
@@ -27,5 +38,10 @@
  /**
  * Components.
  */
- @import './components/animate-css';
- @import './components/flickity';
+
+
+/**
+ * Sections.
+ */
+ @import './sections/header.scss';
+ @import './sections/home.scss';

@@ -9,13 +9,13 @@
       </nav>
     </header>
 
-    <transition
+    <!-- <transition
         name="fade"
         enter-active-class="animated fadeInUp"
         leave-active-class="animated zoomOut"
-      >
+      > -->
       <router-view></router-view>
-    </transition>
+    <!-- </transition> -->
   </div>
 </template>
 

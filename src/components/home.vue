@@ -2,13 +2,9 @@
     <div class="page">
         <div class="container">
 
-            <!-- <img src="../assets/logo.png"> -->
-
-            <h2>{{msg}}</h2>
-
             <div class="main-carousel">
               <div v-for="item in items" v-bind:key="item.id" class="carousel-cell">
-                <img :src="getImgURL(item, item['slider-image-src'])" alt="">
+                <img :src="getImgURL(item, item['slider-image-src'])" :load="imageLoaded()" alt="">
                 <h3>{{item.title}}</h3>
                 <router-link :to="getprojectLink(item)">View Project</router-link>
               </div>
@@ -33,19 +29,18 @@
     name: "home",
     data() {
       return {
-        msg: "New home page",
         items: projects,
       };
     },
     // lifecycle hooks
     beforeCreate() {
-      console.log('Home beforeCreate()')
+
     },
     created() {
-      console.log('Home created()')
+
     },
     beforeMount() {
-      console.log('Home beforeMount()');
+
     },
     mounted() {
       console.log('Home mounted()');
@@ -59,10 +54,16 @@
         return `/project/${item.path}`;
       },
       buildSlider() {
+        let image = document.querySelectorAll('.carousel-cell img')[0];
+        console.log(`buildSlider() = ${image.offsetHeight}`);
         const slider = new this.$flickity( '.main-carousel', {
-          // options
+
         });
       },
+      imageLoaded() {
+        // let image = document.querySelectorAll('.carousel-cell img')[0];
+        // console.log(`imageLoaded() = ${image}`);
+      }
     }
   };
 </script>
