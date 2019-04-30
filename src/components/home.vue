@@ -52,13 +52,13 @@
       this.buildSlider();
     },
     methods: {
-      getImgURL: function(item, img) {
+      getImgURL(item, img) {
         return require(`../images/projects/${item.path}/${img}`);
       },
-      getprojectLink: function(item) {
+      getprojectLink(item) {
         return `/project/${item.path}`;
       },
-      buildSlider: function() {
+      buildSlider() {
         const slider = new this.$flickity( '.main-carousel', {
           // options
         });
