@@ -14,7 +14,9 @@
         enter-active-class="animated fadeInUp"
         leave-active-class="animated zoomOut"
       > -->
-      <router-view></router-view>
+      <keep-alive include="home">
+        <router-view></router-view>
+      </keep-alive>
     <!-- </transition> -->
   </div>
 </template>
