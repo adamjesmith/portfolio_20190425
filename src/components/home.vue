@@ -24,18 +24,10 @@
         items: projects,
       };
     },
-    // lifecycle hooks
-    beforeCreate() {
-
-    },
-    created() {
-
-    },
-    beforeMount() {
-
-    },
     mounted() {
       this.isImageLoaded();
+      //https://github.com/ganlanyuan/tiny-slider
+      //https://vanillalist.top/
     },
     methods: {
       getImgURL(item, img) {
