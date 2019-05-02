@@ -4,7 +4,7 @@
 
             <div class="main-carousel">
               <div v-for="item in items" v-bind:key="item.id" class="carousel-cell">
-                <img :src="getImgURL(item, item['slider-image-src'])" :load="imageLoaded()" alt="">
+                <img :src="getImgURL(item, item['slider-image-src'])" alt="">
                 <h3>{{item.title}}</h3>
                 <router-link :to="getprojectLink(item)">View Project</router-link>
               </div>
@@ -43,8 +43,7 @@
 
     },
     mounted() {
-      console.log('Home mounted()');
-      this.buildSlider();
+      this.isImageLoaded();
     },
     methods: {
       getImgURL(item, img) {
@@ -54,15 +53,21 @@
         return `/project/${item.path}`;
       },
       buildSlider() {
-        let image = document.querySelectorAll('.carousel-cell img')[0];
-        console.log(`buildSlider() = ${image.offsetHeight}`);
         const slider = new this.$flickity( '.main-carousel', {
 
         });
       },
-      imageLoaded() {
-        // let image = document.querySelectorAll('.carousel-cell img')[0];
-        // console.log(`imageLoaded() = ${image}`);
+      isImageLoaded() {
+        let image = document.querySelectorAll('.carousel-cell img')[0];
+        let callback = this.isImageLoaded;
+        console.log(`isImageLoaded() = ${image.offsetHeight}`);
+        if (image.offsetHeight < 1) { 
+          setTimeout(function() {
+            callback();
+          }, 100); 
+        } else {
+          this.buildSlider();
+        }
       }
     }
   };
