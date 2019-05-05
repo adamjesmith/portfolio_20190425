@@ -1,3 +1,5 @@
+@import '~modularscale-sass/stylesheets/modularscale';
+
 /**
  * Typography
  * -----------------------------------------------------------------------------
@@ -5,185 +7,186 @@
  * including normalization, typography, images, tables, and more.
  *
  */
-html,
-body {
-  @include ms-respond(font-size, 0);
-  font-family: $FONT_BODY;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-weight: $WEIGHT_LIGHT;
-  line-height: $LINE_HEIGHT_BODY;
-  text-rendering: optimizeLegibility;
-  text-size-adjust: 100%;
-}
-
-/**
-   * Display styles.
-   */
-.d1 {
-  @include ms-respond(font-size, 9);
-  font-family: $FONT_DISPLAY;
-  font-weight: $WEIGHT_BLACK;
-  letter-spacing: $LETTER_SPACING_DISPLAY;
-  line-height: $LINE_HEIGHT_DISPLAY;
-}
-
-.d2 {
-  @include ms-respond(font-size, 8);
-  font-family: $FONT_DISPLAY;
-  font-weight: $WEIGHT_BLACK;
-  letter-spacing: $LETTER_SPACING_DISPLAY;
-  line-height: $LINE_HEIGHT_DISPLAY;
-}
-
-.d3 {
-  @include ms-respond(font-size, 7);
-  font-family: $FONT_DISPLAY;
-  font-weight: $WEIGHT_BLACK;
-  letter-spacing: $LETTER_SPACING_DISPLAY;
-  line-height: $LINE_HEIGHT_DISPLAY;
-}
-
-/**
-   * Basic headers.
-   */
-h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-}
-h1,
-.h1 {
-  @include ms-respond(font-size, 11);
-  font-family: $FONT_HEADING;
-  font-weight: $WEIGHT_BLACK;
-  line-height: $LINE_HEIGHT_DISPLAY;
-  margin: 0 0 $SPACING_XL;
-}
-
-h2,
-.h2 {
-  @include ms-respond(font-size, 8);
-  font-family: $FONT_HEADING;
-  font-weight: $WEIGHT_BLACK;
-  line-height: $LINE_HEIGHT_DISPLAY;
-  margin: 0 0 $SPACING_L;
-}
-
-h3,
-.h3 {
-  @include ms-respond(font-size, 4);
-  font-family: $FONT_HEADING;
-  font-weight: $WEIGHT_BLACK;
-  line-height: $LINE_HEIGHT_DISPLAY;
-  margin: 0 0 $SPACING_M;
-}
-
-h4,
-.h4 {
-  @include ms-respond(font-size, 3);
-  font-family: $FONT_HEADING;
-  font-weight: $WEIGHT_BLACK;
-  line-height: $LINE_HEIGHT_DISPLAY;
-  margin: 0 0 $SPACING_M;
-}
-
-h5,
-.h5 {
-  @include ms-respond(font-size, 2);
-  font-family: $FONT_HEADING;
-  font-weight: $WEIGHT_BLACK;
-  line-height: $LINE_HEIGHT_DISPLAY;
-  margin: 0 0 $SPACING_M;
-}
-
-h6,
-.h6 {
-  @include ms-respond(font-size, 1);
-  font-family: $FONT_HEADING;
-  font-weight: $WEIGHT_BLACK;
-  line-height: $LINE_HEIGHT_DISPLAY;
-  margin: 0 0 $SPACING_M;
-}
-
-/**
-   * Header styling.
-   */
-.subheading {
-  @include ms-respond(font-size, -4);
-  font-weight: $WEIGHT_BOLD;
-  letter-spacing: $LETTER_SPACING_SUBHEADING;
-  text-transform: uppercase;
-}
-
-/**
-   * Other styles.
-   */
-p {
-  @include ms-respond(font-size, 0);
-  font-family: $FONT_BODY;
-  line-height: $LINE_HEIGHT_BODY;
-  margin: 0 0 $SPACING_L;
-}
-
-a,
-.text-link {
-  //color: $COLOR_LINK;
-  text-decoration: none;
-
-  &:hover {
-    //color: $COLOR_LINK_HOVER;
-    cursor: pointer;
-  }
-
-  &:focus {
-    //color: $COLOR_FOCUS;
-  }
-}
-
-.lead {
-  @include ms-respond(font-size, 1);
-  line-height: $LINE_HEIGHT_BODY;
-}
-
-.meta {
-  @include ms-respond(font-size, -1);
-}
-
-legend,
-.legend {
-  @include ms-respond(font-size, -1);
-  font-weight: $WEIGHT_BOOK;
-}
-
-label,
-.label {
-  @include ms-respond(font-size, -2);
-}
-
-caption,
-.caption {
-  @include ms-respond(font-size, -2);
-}
-
-.legal,
-%legal {
-  @include ms-respond(font-size, -3);
-}
-
-/**
-   * Block styles.
-   */
-blockquote {
-  @include ms-respond(font-size, 3);
-  //color: $COLOR_GREY_1;
-  line-height: $LINE_HEIGHT_BODY;
-  margin: 0 0 $SPACING_XL;
-  padding-bottom: $SPACING_XL;
-}
-
-ol,
-.ol,
-ul,
-.ul {
-  @include ms-respond(font-size, 0);
-  line-height: $LINE_HEIGHT_BODY;
-}
+ html,
+ body {
+   font-size: ms(0);
+   font-family: $FONT_BODY;
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+   font-weight: $WEIGHT_LIGHT;
+   line-height: $LINE_HEIGHT_BODY;
+   text-rendering: optimizeLegibility;
+   text-size-adjust: 100%;
+ }
+ 
+ /**
+    * Display styles.
+    */
+ .d1 {
+   font-size: ms(9);
+   font-family: $FONT_DISPLAY;
+   font-weight: $WEIGHT_BLACK;
+   letter-spacing: $LETTER_SPACING_DISPLAY;
+   line-height: $LINE_HEIGHT_DISPLAY;
+ }
+ 
+ .d2 {
+   font-size: ms(8);
+   font-family: $FONT_DISPLAY;
+   font-weight: $WEIGHT_BLACK;
+   letter-spacing: $LETTER_SPACING_DISPLAY;
+   line-height: $LINE_HEIGHT_DISPLAY;
+ }
+ 
+ .d3 {
+   font-size: ms(7);
+   font-family: $FONT_DISPLAY;
+   font-weight: $WEIGHT_BLACK;
+   letter-spacing: $LETTER_SPACING_DISPLAY;
+   line-height: $LINE_HEIGHT_DISPLAY;
+ }
+ 
+ /**
+    * Basic headers.
+    */
+ h1, h2, h3, h4, h5, h6 {
+     text-transform: uppercase;
+ }
+ h1,
+ .h1 {
+   font-size: ms(6);
+   font-family: $FONT_HEADING;
+   font-weight: $WEIGHT_BLACK;
+   line-height: $LINE_HEIGHT_DISPLAY;
+   margin: 0 0 $SPACING_XL;
+ }
+ 
+ h2,
+ .h2 {
+   font-size: ms(5);
+   font-family: $FONT_HEADING;
+   font-weight: $WEIGHT_BLACK;
+   line-height: $LINE_HEIGHT_DISPLAY;
+   margin: 0 0 $SPACING_L;
+ }
+ 
+ h3,
+ .h3 {
+   font-size: ms(4);
+   font-family: $FONT_HEADING;
+   font-weight: $WEIGHT_BLACK;
+   line-height: $LINE_HEIGHT_DISPLAY;
+   margin: 0 0 $SPACING_M;
+ }
+ 
+ h4,
+ .h4 {
+   font-size: ms(3);
+   font-family: $FONT_HEADING;
+   font-weight: $WEIGHT_BLACK;
+   line-height: $LINE_HEIGHT_DISPLAY;
+   margin: 0 0 $SPACING_M;
+ }
+ 
+ h5,
+ .h5 {
+   font-size: ms(2);
+   font-family: $FONT_HEADING;
+   font-weight: $WEIGHT_BLACK;
+   line-height: $LINE_HEIGHT_DISPLAY;
+   margin: 0 0 $SPACING_M;
+ }
+ 
+ h6,
+ .h6 {
+   font-size: ms(1);
+   font-family: $FONT_HEADING;
+   font-weight: $WEIGHT_BLACK;
+   line-height: $LINE_HEIGHT_DISPLAY;
+   margin: 0 0 $SPACING_M;
+ }
+ 
+ /**
+    * Header styling.
+    */
+ .subheading {
+   font-size: ms(-4);
+   font-weight: $WEIGHT_BOLD;
+   letter-spacing: $LETTER_SPACING_SUBHEADING;
+   text-transform: uppercase;
+ }
+ 
+ /**
+    * Other styles.
+    */
+ p {
+   font-size: ms(0);
+   font-family: $FONT_BODY;
+   line-height: $LINE_HEIGHT_BODY;
+   margin: 0 0 $SPACING_L;
+ }
+ 
+ a,
+ .text-link {
+   //color: $COLOR_LINK;
+   text-decoration: none;
+ 
+   &:hover {
+     //color: $COLOR_LINK_HOVER;
+     cursor: pointer;
+   }
+ 
+   &:focus {
+     //color: $COLOR_FOCUS;
+   }
+ }
+ 
+ .lead {
+   font-size: ms(1);
+   line-height: $LINE_HEIGHT_BODY;
+ }
+ 
+ .meta {
+   font-size: ms(-1);
+ }
+ 
+ legend,
+ .legend {
+   font-size: ms(-1);
+   font-weight: $WEIGHT_BOOK;
+ }
+ 
+ label,
+ .label {
+   font-size: ms(-2);
+ }
+ 
+ caption,
+ .caption {
+   font-size: ms(-2);
+ }
+ 
+ .legal,
+ %legal {
+   font-size: ms(-3);
+ }
+ 
+ /**
+    * Block styles.
+    */
+ blockquote {
+   font-size: ms(3);
+   //color: $COLOR_GREY_1;
+   line-height: $LINE_HEIGHT_BODY;
+   margin: 0 0 $SPACING_XL;
+   padding-bottom: $SPACING_XL;
+ }
+ 
+ ol,
+ .ol,
+ ul,
+ .ul {
+   font-size: ms(0);
+   line-height: $LINE_HEIGHT_BODY;
+ }
+ 
