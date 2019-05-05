@@ -1,9 +1,9 @@
 [
     {
         "id": "0",
-        "title": "Project 1",
+        "title": "Every Second Counts",
         "path": "every-second-counts",
-        "slider-image-src": "test.jpg",
+        "slider-image-src": "slider.jpg",
         "short-description": "",
         "video-src": "",
         "project-image-1-src": "",
@@ -13,13 +13,13 @@
         "project-mobile-2-src": "",
         "dev-details": "",
         "dev-key-roles": "",
-        "site-link": "www.apple.com"
+        "site-link": "https://www.everysecondcounts.co.uk/"
     },
     {
         "id": "1",
-        "title": "Project 2",
+        "title": "Butler and Stag",
         "path": "butler-and-stag",
-        "slider-image-src": "test.jpg",
+        "slider-image-src": "slider.jpg",
         "short-description": "",
         "video-src": "",
         "project-image-1-src": "",
@@ -29,6 +29,54 @@
         "project-mobile-2-src": "",
         "dev-details": "",
         "dev-key-roles": "",
-        "site-link": "www.google.com"
+        "site-link": "https://www.butlerandstag.uk/"
+    },
+    {
+        "id": "2",
+        "title": "LuxDeco",
+        "path": "luxdeco",
+        "slider-image-src": "slider.jpg",
+        "short-description": "",
+        "video-src": "",
+        "project-image-1-src": "",
+        "project-image-2-src": "",
+        "project-hero-src": "",
+        "project-mobile-1-src": "",
+        "project-mobile-2-src": "",
+        "dev-details": "",
+        "dev-key-roles": "",
+        "site-link": "https://www.luxdeco.com/"
+    },
+    {
+        "id": "3",
+        "title": "Courtneys",
+        "path": "courtneys",
+        "slider-image-src": "slider.jpg",
+        "short-description": "",
+        "video-src": "",
+        "project-image-1-src": "",
+        "project-image-2-src": "",
+        "project-hero-src": "",
+        "project-mobile-1-src": "",
+        "project-mobile-2-src": "",
+        "dev-details": "",
+        "dev-key-roles": "",
+        "site-link": "http://www.courtneys-estates.com/"
+    },
+    {
+        "id": "4",
+        "title": "Hasbro Pulse",
+        "path": "hasbro-pulse",
+        "slider-image-src": "slider.jpg",
+        "short-description": "",
+        "video-src": "",
+        "project-image-1-src": "",
+        "project-image-2-src": "",
+        "project-hero-src": "",
+        "project-mobile-1-src": "",
+        "project-mobile-2-src": "",
+        "dev-details": "",
+        "dev-key-roles": "",
+        "site-link": "https://hasbropulse.com/"
     }
 ]

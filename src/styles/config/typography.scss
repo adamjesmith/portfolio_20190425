@@ -1,4 +1,23 @@
 /**
+ * Config: Typography
+ * -----------------------------------------------------------------------------
+ * - Modular scale built by https://github.com/modularscale/modularscale-sass
+ *
+ */
+ @import '~mathsass';
+ @import '~modularscale-sass/stylesheets/modularscale';
+
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:900|Roboto:300,500');
+
+ /**
+  * Font scale configuration.
+  */
+  $modularscale: (
+    base: 1em,
+    ratio: 1.25
+  );
+
+/**
  * Font stack.
  */
 // stylelint-disable
