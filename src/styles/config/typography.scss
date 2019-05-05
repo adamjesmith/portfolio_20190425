@@ -12,22 +12,10 @@
  /**
   * Font scale configuration.
   */
- $modularscale: (
-   base: 14px,
-   ratio: 1.2,
-   400px: (
-     ratio: 24at6,
-   ),
-   768px: (
-     base: 15px,
-     ratio: 30at6,
-   ),
-   1366px: (
-     base: 16px,
-     ratio: 40at9,
-   ),
- );
-
+  $modularscale: (
+    base: 1em,
+    ratio: 1.25
+  );
 
 /**
  * Font stack.
@@ -57,7 +45,7 @@ $WEIGHT_BLACK: 900;
 $BASELINE: 1rem;
 $LINE_HEIGHT_BODY: 1.5;
 $LINE_HEIGHT_META: 1.25;
-$LINE_HEIGHT_DISPLAY: 1.15;
+$LINE_HEIGHT_DISPLAY: 1.1;
 $LETTER_SPACING_BODY: 0;
 $LETTER_SPACING_DISPLAY: 0;
 $LETTER_SPACING_SUBHEADING: 1px;

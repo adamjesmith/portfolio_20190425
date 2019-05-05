@@ -7,7 +7,7 @@
  */
 html,
 body {
-  @include ms-respond(font-size, 0);
+  font-size: ms(0);
   font-family: $FONT_BODY;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -21,7 +21,7 @@ body {
    * Display styles.
    */
 .d1 {
-  @include ms-respond(font-size, 9);
+  font-size: ms(9);
   font-family: $FONT_DISPLAY;
   font-weight: $WEIGHT_BLACK;
   letter-spacing: $LETTER_SPACING_DISPLAY;
@@ -29,7 +29,7 @@ body {
 }
 
 .d2 {
-  @include ms-respond(font-size, 8);
+  font-size: ms(8);
   font-family: $FONT_DISPLAY;
   font-weight: $WEIGHT_BLACK;
   letter-spacing: $LETTER_SPACING_DISPLAY;
@@ -37,7 +37,7 @@ body {
 }
 
 .d3 {
-  @include ms-respond(font-size, 7);
+  font-size: ms(7);
   font-family: $FONT_DISPLAY;
   font-weight: $WEIGHT_BLACK;
   letter-spacing: $LETTER_SPACING_DISPLAY;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1,
 .h1 {
-  @include ms-respond(font-size, 11);
+  font-size: ms(6);
   font-family: $FONT_HEADING;
   font-weight: $WEIGHT_BLACK;
   line-height: $LINE_HEIGHT_DISPLAY;
@@ -61,7 +61,7 @@ h1,
 
 h2,
 .h2 {
-  @include ms-respond(font-size, 8);
+  font-size: ms(5);
   font-family: $FONT_HEADING;
   font-weight: $WEIGHT_BLACK;
   line-height: $LINE_HEIGHT_DISPLAY;
@@ -70,7 +70,7 @@ h2,
 
 h3,
 .h3 {
-  @include ms-respond(font-size, 4);
+  font-size: ms(4);
   font-family: $FONT_HEADING;
   font-weight: $WEIGHT_BLACK;
   line-height: $LINE_HEIGHT_DISPLAY;
@@ -79,7 +79,7 @@ h3,
 
 h4,
 .h4 {
-  @include ms-respond(font-size, 3);
+  font-size: ms(3);
   font-family: $FONT_HEADING;
   font-weight: $WEIGHT_BLACK;
   line-height: $LINE_HEIGHT_DISPLAY;
@@ -88,7 +88,7 @@ h4,
 
 h5,
 .h5 {
-  @include ms-respond(font-size, 2);
+  font-size: ms(2);
   font-family: $FONT_HEADING;
   font-weight: $WEIGHT_BLACK;
   line-height: $LINE_HEIGHT_DISPLAY;
@@ -97,7 +97,7 @@ h5,
 
 h6,
 .h6 {
-  @include ms-respond(font-size, 1);
+  font-size: ms(1);
   font-family: $FONT_HEADING;
   font-weight: $WEIGHT_BLACK;
   line-height: $LINE_HEIGHT_DISPLAY;
@@ -108,7 +108,7 @@ h6,
    * Header styling.
    */
 .subheading {
-  @include ms-respond(font-size, -4);
+  font-size: ms(-4);
   font-weight: $WEIGHT_BOLD;
   letter-spacing: $LETTER_SPACING_SUBHEADING;
   text-transform: uppercase;
@@ -118,7 +118,7 @@ h6,
    * Other styles.
    */
 p {
-  @include ms-respond(font-size, 0);
+  font-size: ms(0);
   font-family: $FONT_BODY;
   line-height: $LINE_HEIGHT_BODY;
   margin: 0 0 $SPACING_L;
@@ -140,40 +140,40 @@ a,
 }
 
 .lead {
-  @include ms-respond(font-size, 1);
+  font-size: ms(1);
   line-height: $LINE_HEIGHT_BODY;
 }
 
 .meta {
-  @include ms-respond(font-size, -1);
+  font-size: ms(-1);
 }
 
 legend,
 .legend {
-  @include ms-respond(font-size, -1);
+  font-size: ms(-1);
   font-weight: $WEIGHT_BOOK;
 }
 
 label,
 .label {
-  @include ms-respond(font-size, -2);
+  font-size: ms(-2);
 }
 
 caption,
 .caption {
-  @include ms-respond(font-size, -2);
+  font-size: ms(-2);
 }
 
 .legal,
 %legal {
-  @include ms-respond(font-size, -3);
+  font-size: ms(-3);
 }
 
 /**
    * Block styles.
    */
 blockquote {
-  @include ms-respond(font-size, 3);
+  font-size: ms(3);
   //color: $COLOR_GREY_1;
   line-height: $LINE_HEIGHT_BODY;
   margin: 0 0 $SPACING_XL;
@@ -184,6 +184,6 @@ ol,
 .ol,
 ul,
 .ul {
-  @include ms-respond(font-size, 0);
+  font-size: ms(0);
   line-height: $LINE_HEIGHT_BODY;
 }

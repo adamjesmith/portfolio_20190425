@@ -1,11 +1,10 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <header>
-      <router-link to="/">Home</router-link>
+      <router-link to="/">adam</router-link>
       <nav>
-        <router-link to="/about">About</router-link>
-        <router-link to="/contact">Contact</router-link>
+        <router-link to="/about">about 2</router-link>
+        <router-link to="/contact">contact</router-link>
       </nav>
     </header>
 
