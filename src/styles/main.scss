@@ -10,7 +10,7 @@
  * Vendors.
  */
 @import './vendors/animate-css';
-@import './vendors/flickity';
+@import './vendors/tiny';
 
 
 /**
@@ -38,7 +38,7 @@
  /**
  * Components.
  */
-
+ @import './components/slider.scss';
 
 /**
  * Sections.

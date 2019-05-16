@@ -46,11 +46,14 @@ $ELEMENT_BOTTOM_MARGIN: (($GUTTER_WIDTH * 2) / 3) !default;
 
 .container {
   margin: 0 auto;
-  max-width: 1360px;
+  max-width: 100%;
   width: 100%;
+  outline: 2px solid red;
 
   @include mq($from: medium) {
+    max-width: 1360px;
     width: 90%;
+    outline: 2px solid blue;
   }
 }
 
