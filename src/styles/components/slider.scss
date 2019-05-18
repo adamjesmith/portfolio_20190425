@@ -1,7 +1,10 @@
 .main-carousel {
 
+    &__container {
+       
+    }
+
     &__cell {
-        outline: 4px solid green;
         position: relative;
     }
     
@@ -20,6 +23,15 @@
         z-index: 1;
     }
 
+    &__title {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin: 0 0 0 20px;
+        transform: translate(0, 50%);
+        z-index: 2;
+    }
+
     .tns-item {
         opacity: 0;
         transition: all 0.5s ease;
@@ -27,5 +39,19 @@
       
     .tns-slide-active {
         opacity: 1;
+    }
+
+    @include mq($from: medium) {
+
+        &__container {
+            grid-column-start: 2;
+            grid-column-end: 12;
+        }
+
+        &__title {
+            @include centerer($horizontal: false, $vertical: true);
+            bottom: auto;
+            margin: 0;
+        }
     }
 }

@@ -45,23 +45,32 @@ $ELEMENT_BOTTOM_MARGIN: (($GUTTER_WIDTH * 2) / 3) !default;
 }
 
 .container {
-  outline: 2px solid red;
-  background-color: #ccc;
+  // outline: 2px solid red;
+  // background-color: #ccc;
   margin: 0 auto;
   max-width: calc(100% - 60px);
   width: 100%;
 
   @include mq($from: medium) {
-    outline: 2px solid blue;
+    max-width: calc(100% - 90px);
+  }
+
+  @include mq($from: large) {
     max-width: calc(100% - 120px);
   }
 }
 
 .container-content {
-  background-color: #f2f2f2;
   margin: 0 auto;
   max-width: 960px;
+  position: relative;
   width: 100%;
+  
+  @include mq($from: medium) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
+  }
 }
 
 
@@ -118,6 +127,10 @@ $ELEMENT_BOTTOM_MARGIN: (($GUTTER_WIDTH * 2) / 3) !default;
     &[class*=push-],
     &[class*=pull-] {
       position: relative;
+    }
+
+    &.no-padding {
+      padding: 0;
     }
 
     $i: 1;
