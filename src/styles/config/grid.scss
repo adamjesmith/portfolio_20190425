@@ -45,17 +45,25 @@ $ELEMENT_BOTTOM_MARGIN: (($GUTTER_WIDTH * 2) / 3) !default;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 100%;
-  width: 100%;
   outline: 2px solid red;
+  background-color: #ccc;
+  margin: 0 auto;
+  max-width: calc(100% - 40px);
+  width: 100%;
 
   @include mq($from: medium) {
-    max-width: 1360px;
-    width: 90%;
     outline: 2px solid blue;
+    max-width: calc(100% - 120px);
   }
 }
+
+.container-content {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+
 
 .col .row {
   margin-left: (-1 * $GUTTER_WIDTH / 2);
@@ -80,7 +88,6 @@ $ELEMENT_BOTTOM_MARGIN: (($GUTTER_WIDTH * 2) / 3) !default;
 }
 
 .row {
-  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 
@@ -199,9 +206,4 @@ $ELEMENT_BOTTOM_MARGIN: (($GUTTER_WIDTH * 2) / 3) !default;
       }
     }
   }
-}
-
-.page {
-    // position: fixed;
-    // width: inherit;
 }
