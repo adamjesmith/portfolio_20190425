@@ -48,7 +48,7 @@ $ELEMENT_BOTTOM_MARGIN: (($GUTTER_WIDTH * 2) / 3) !default;
   outline: 2px solid red;
   background-color: #ccc;
   margin: 0 auto;
-  max-width: calc(100% - 40px);
+  max-width: calc(100% - 60px);
   width: 100%;
 
   @include mq($from: medium) {

@@ -11,9 +11,11 @@
   "dependencies": {
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",
+    "debounce": "^1.2.0",
     "sass-mq": "^5.0.0",
     "tiny-slider": "^2.9.2",
     "vue": "^2.6.7",
+    "vue-debounce": "^1.2.0",
     "vue-router": "^3.0.2",
     "vue-tiny-slider": "^0.1.35"
   },

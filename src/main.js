@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
+
+// Plugins
 import axios from 'axios'
 import {tns} from 'tiny-slider/src/tiny-slider'
 
+// Components
 import about from './components/about.vue'
 import contact from './components/contact.vue'
 import home from './components/home.vue'
@@ -11,6 +14,7 @@ import project from './components/project.vue'
 
 Vue.prototype.$axios = axios
 Vue.prototype.$tns = tns
+
 Vue.use(VueRouter)
 
 const Contact = { template: '<div><h2>Contact Page</h2></div>' }
