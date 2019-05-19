@@ -8,7 +8,7 @@
               <div class="main-carousel__spacer"></div>
               <img
                 :src="getProjectURL(item, item['slider-image-src'])"
-                alt
+                :alt="item.title"
                 class="main-carousel__image"
               >
               <!-- <router-link :to="getprojectLink(item)">View Project</router-link> -->
@@ -69,18 +69,29 @@ export default {
       let self = this;
       this.slider.events.on("transitionStart", function() {
         console.log("transitionStart");
-        //self.clearTitle();
+        self.clearTitle();
       });
       this.slider.events.on("transitionEnd", function() {
         console.log("transitionEnd");
-        //self.populateTitle();
+        self.populateTitle();
       });
     },
     clearTitle() {
-      //console.log('clearTitle');
+      this.title.innerHTML = '';
     },
     populateTitle() {
-
+      if (this.title.innerHTML === '') {
+        let active = document.querySelector('.tns-slide-active');
+        let words = active.dataset.project.split(" ");
+        this.title.innerHTML = this.wrapTitle(words);
+      }
+    },
+    wrapTitle(words) {
+      let str ='';
+      words.forEach( (word, index) => {
+        str += `<span class="animated fadeInUp">${word}</span>`
+      });
+      return str;
     },
     mouseScroll: debounce(function(e) {
       if (e.deltaY < 0) {
