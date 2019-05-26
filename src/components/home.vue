@@ -1,6 +1,6 @@
 <template>
   <div class="container main-carousel">
-    <div class="container-content">
+    <div class="container-content main-carousel__bg">
         <h2 class="main-carousel__title" js-slider="title"></h2>  
         <div class="main-carousel__container">
           <div class="main-carousel__carousel" v-on:wheel="mouseScroll">

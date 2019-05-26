@@ -1,3 +1,8 @@
 header {
     background-color: red;
+
+    @include mq($from: medium) {
+        background-color: green;
+    }
+
 }

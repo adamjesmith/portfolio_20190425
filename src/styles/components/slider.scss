@@ -4,6 +4,11 @@
        
     }
 
+    &__bg {
+        background-color: #fff;
+        outline: 2px solid red;
+    }
+
     &__cell {
         position: relative;
     }
@@ -24,7 +29,8 @@
     }
 
     &__title {
-        color: #000;
+        mix-blend-mode: difference;
+        color: #fff;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -54,8 +60,8 @@
     @include mq($from: medium) {
 
         &__container {
-            grid-column-start: 2;
-            grid-column-end: 12;
+            grid-column-start: 3;
+            grid-column-end: 13;
         }
 
         &__title {
