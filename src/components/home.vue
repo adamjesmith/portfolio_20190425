@@ -58,7 +58,7 @@ export default {
         speed: 1500,
         autoplayHoverPause: true,
         touch: true,
-        mouseDrag: false,
+        mouseDrag: true,
         nav: false,
         onInit: function() {
           self.sliderEvents();

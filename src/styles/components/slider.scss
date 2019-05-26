@@ -6,7 +6,6 @@
 
     &__bg {
         background-color: #fff;
-        outline: 2px solid red;
     }
 
     &__cell {
@@ -61,7 +60,7 @@
 
         &__container {
             grid-column-start: 3;
-            grid-column-end: 13;
+            grid-column-end: 13;        
         }
 
         &__title {

@@ -16,7 +16,7 @@ $mq-breakpoints: (
   small: 576px,
   medium: 768px,
   large: 1024px,
-  wide: 1360px
+  wide: 1400px
 );
 
 $NUM_COLS: 12 !default;
@@ -45,18 +45,24 @@ $ELEMENT_BOTTOM_MARGIN: (($GUTTER_WIDTH * 2) / 3) !default;
 }
 
 .container {
-  // outline: 2px solid red;
-  // background-color: #ccc;
   margin: 0 auto;
-  max-width: calc(100% - 60px);
+  max-width: calc(100% - (#{$SPACING_M} * 2));
   width: 100%;
 
+  @include mq($from: small) {
+    max-width: calc(100% - (#{$SPACING_XL} * 2));
+  }
+
   @include mq($from: medium) {
-    max-width: calc(100% - 90px);
+    max-width: calc(100% - (#{$SPACING_2XL} * 2));
   }
 
   @include mq($from: large) {
-    max-width: calc(100% - 120px);
+    max-width: calc(100% - (#{$SPACING_3XL} * 2));
+  }
+  
+  @include mq($from: wide) {
+    max-width: 1320px;
   }
 }
 

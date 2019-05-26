@@ -7,7 +7,7 @@
  */
  html,
  body {
-   font-size: ms(0);
+   @include ms-respond(font-size, 0);
    font-family: $FONT_BODY;
    -moz-osx-font-smoothing: grayscale;
    -webkit-font-smoothing: antialiased;
@@ -15,33 +15,37 @@
    line-height: $LINE_HEIGHT_BODY;
    text-rendering: optimizeLegibility;
    text-size-adjust: 100%;
+   color: $TEXT_COLOR_LIGHT;
  }
  
  /**
     * Display styles.
     */
  .d1 {
-   font-size: ms(9);
+   @include ms-respond(font-size, 9);
    font-family: $FONT_DISPLAY;
    font-weight: $WEIGHT_BLACK;
    letter-spacing: $LETTER_SPACING_DISPLAY;
    line-height: $LINE_HEIGHT_DISPLAY;
+   color: $TEXT_COLOR;
  }
  
  .d2 {
-   font-size: ms(8);
+   @include ms-respond(font-size, 8);
    font-family: $FONT_DISPLAY;
    font-weight: $WEIGHT_BLACK;
    letter-spacing: $LETTER_SPACING_DISPLAY;
    line-height: $LINE_HEIGHT_DISPLAY;
+   color: $TEXT_COLOR;
  }
  
  .d3 {
-   font-size: ms(7);
+   @include ms-respond(font-size, 7);
    font-family: $FONT_DISPLAY;
    font-weight: $WEIGHT_BLACK;
    letter-spacing: $LETTER_SPACING_DISPLAY;
    line-height: $LINE_HEIGHT_DISPLAY;
+   color: $TEXT_COLOR;
  }
  
  /**
@@ -52,63 +56,80 @@
  }
  h1,
  .h1 {
-   font-size: ms(6);
+   @include ms-respond(font-size, 6);
    font-family: $FONT_HEADING;
-   font-weight: $WEIGHT_BLACK;
    line-height: $LINE_HEIGHT_DISPLAY;
    margin: 0 0 $SPACING_XL;
+   color: $TEXT_COLOR;
+
+   @include mq($from: medium) {
+    //letter-spacing: -2px;
+   }
  }
  
  h2,
  .h2 {
-   font-size: ms(5);
-   font-family: $FONT_HEADING;
-   font-weight: $WEIGHT_BLACK;
-   line-height: $LINE_HEIGHT_DISPLAY;
-   margin: 0 0 $SPACING_L;
+  @include ms-respond(font-size, 5);
+  font-family: $FONT_HEADING;
+  font-weight: $WEIGHT_BLACK;
+  line-height: $LINE_HEIGHT_DISPLAY;
+  margin: 0 0 $SPACING_L;
+  color: $TEXT_COLOR;
+  
+  @include mq($from: medium) {
+    // letter-spacing: -1.8px;
+  }
  }
  
  h3,
  .h3 {
-   font-size: ms(4);
+   @include ms-respond(font-size, 4);
    font-family: $FONT_HEADING;
    font-weight: $WEIGHT_BLACK;
    line-height: $LINE_HEIGHT_DISPLAY;
    margin: 0 0 $SPACING_M;
+   color: $TEXT_COLOR;
+   
+   @include mq($from: medium) {
+    // letter-spacing: -1.6px;
+  }
  }
  
  h4,
  .h4 {
-   font-size: ms(3);
+   @include ms-respond(font-size, 3);
    font-family: $FONT_HEADING;
    font-weight: $WEIGHT_BLACK;
    line-height: $LINE_HEIGHT_DISPLAY;
    margin: 0 0 $SPACING_M;
+   color: $TEXT_COLOR;
  }
  
  h5,
  .h5 {
-   font-size: ms(2);
+   @include ms-respond(font-size, 2);
    font-family: $FONT_HEADING;
    font-weight: $WEIGHT_BLACK;
    line-height: $LINE_HEIGHT_DISPLAY;
    margin: 0 0 $SPACING_M;
+   color: $TEXT_COLOR;
  }
  
  h6,
  .h6 {
-   font-size: ms(1);
+   @include ms-respond(font-size, 1);
    font-family: $FONT_HEADING;
    font-weight: $WEIGHT_BLACK;
    line-height: $LINE_HEIGHT_DISPLAY;
    margin: 0 0 $SPACING_M;
+   color: $TEXT_COLOR;
  }
  
  /**
     * Header styling.
     */
  .subheading {
-   font-size: ms(-4);
+   @include ms-respond(font-size, -4);
    font-weight: $WEIGHT_BOLD;
    letter-spacing: $LETTER_SPACING_SUBHEADING;
    text-transform: uppercase;
@@ -118,7 +139,7 @@
     * Other styles.
     */
  p {
-   font-size: ms(0);
+   @include ms-respond(font-size, 0);
    font-family: $FONT_BODY;
    line-height: $LINE_HEIGHT_BODY;
    margin: 0 0 $SPACING_L;
@@ -140,40 +161,40 @@
  }
  
  .lead {
-   font-size: ms(1);
+   @include ms-respond(font-size, 1);
    line-height: $LINE_HEIGHT_BODY;
  }
  
  .meta {
-   font-size: ms(-1);
+   @include ms-respond(font-size, -1);
  }
  
  legend,
  .legend {
-   font-size: ms(-1);
+   @include ms-respond(font-size, -1);
    font-weight: $WEIGHT_BOOK;
  }
  
  label,
  .label {
-   font-size: ms(-2);
+   @include ms-respond(font-size, -2);
  }
  
  caption,
  .caption {
-   font-size: ms(-2);
+   @include ms-respond(font-size, -2);
  }
  
  .legal,
  %legal {
-   font-size: ms(-3);
+   @include ms-respond(font-size, -3);
  }
  
  /**
     * Block styles.
     */
  blockquote {
-   font-size: ms(3);
+   @include ms-respond(font-size, 3);
    //color: $COLOR_GREY_1;
    line-height: $LINE_HEIGHT_BODY;
    margin: 0 0 $SPACING_XL;
@@ -184,7 +205,7 @@
  .ol,
  ul,
  .ul {
-   font-size: ms(0);
+   @include ms-respond(font-size, 0);
    line-height: $LINE_HEIGHT_BODY;
  }
  

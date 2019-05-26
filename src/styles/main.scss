@@ -19,9 +19,10 @@
 @import './config/reset.scss';
 @import './config/colours.scss';
 @import './config/mixins.scss';
-@import './config/grid.scss';
 @import './config/spacing.scss';
+@import './config/grid.scss';
 @import './config/typography.scss';
+@import './config/layout.scss';
 
 /**
  * Helpers.
@@ -45,3 +46,4 @@
  */
  @import './sections/header.scss';
  @import './sections/home.scss';
+ @import './sections/navigation.scss';

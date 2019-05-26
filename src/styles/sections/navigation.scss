@@ -1,0 +1,25 @@
+.navigation {
+    background-color: #000;
+    transform: rotate(90deg);
+    transform: rotate(90deg) translate(100%, 0);
+    transform-origin: right top;
+    position: absolute;
+    right: 0;
+    top: $SPACING_M;
+
+    &__link {
+        color: $TEXT_COLOR_LIGHT;
+    }
+
+    @include mq($from: small) {
+        top: $SPACING_XL;
+    }
+
+    @include mq($from: medium) {
+        top: $SPACING_2XL;
+    }
+
+    @include mq($from: large) {
+        top: $SPACING_3XL;
+    }
+}

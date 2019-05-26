@@ -1,8 +1,23 @@
-header {
-    background-color: red;
+.header {
+    background-color: #444;
+    height: $HEADER_HEIGHT;
+    border-top: $SPACING_M solid #ccc;
+    position: relative;
 
-    @include mq($from: medium) {
-        background-color: green;
+    &__title {
+        color: $TEXT_COLOR;
     }
 
+    @include mq($from: small) {
+        border-top: $SPACING_XL solid #ccc;
+    }
+
+    @include mq($from: medium) {
+        height: $HEADER_HEIGHT_L;
+        border-top: $SPACING_2XL solid #ccc;
+    }
+
+    @include mq($from: large) {
+        border-top: $SPACING_3XL solid #ccc;
+    }
 }

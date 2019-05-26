@@ -3,12 +3,13 @@
     
     <div class="container">
       <div class="row">
-        <header>
-          <img src="./assets/logo.png" class="logo">
-          <router-link to="/">Home</router-link>
-          <nav>
-            <router-link to="/about">About</router-link>
-            <router-link to="/contact">Contact</router-link>
+        <header class="header">
+          <router-link to="/" class="header__title">thedigitalsmith</router-link>
+          <nav class="navigation">
+            <div class="navigation__links">
+              <router-link to="/about" class="navigation__link">about</router-link>
+            </div>
+            <!-- <router-link to="/contact">Contact</router-link> -->
           </nav>
         </header>
       </div>
