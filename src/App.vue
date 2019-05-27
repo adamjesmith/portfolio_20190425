@@ -1,19 +1,19 @@
 <template>
   <div id="app">
     
-    <div class="container">
-      <div class="row">
-        <header class="header">
+    
+    <header class="header">
+      <div class="container">
+        <div class="navigation__container">
           <router-link to="/" class="header__title">thedigitalsmith</router-link>
           <nav class="navigation">
-            <div class="navigation__links">
-              <router-link to="/about" class="navigation__link">about</router-link>
-            </div>
+            <router-link to="/about" class="navigation__link navigation__link--rotate">about</router-link>
             <!-- <router-link to="/contact">Contact</router-link> -->
           </nav>
-        </header>
+        </div>
       </div>
-    </div>
+    </header>
+      
 
     <!-- <transition
         name="fade"

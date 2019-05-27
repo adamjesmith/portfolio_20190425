@@ -1,9 +1,5 @@
 .main-carousel {
 
-    &__container {
-       
-    }
-
     &__bg {
         background-color: #fff;
     }
@@ -50,7 +46,7 @@
     .tns-item {
         opacity: 0;
         transition: all 0.5s ease;
-      }
+    }
       
     .tns-slide-active {
         opacity: 1;

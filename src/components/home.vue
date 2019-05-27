@@ -1,22 +1,39 @@
 <template>
-  <div class="container main-carousel">
-    <div class="container-content main-carousel__bg">
-        <h2 class="main-carousel__title" js-slider="title"></h2>  
-        <div class="main-carousel__container">
-          <div class="main-carousel__carousel" v-on:wheel="mouseScroll">
-            <div v-for="item in items" v-bind:key="item.id" class="main-carousel__cell" :data-project="item.title">
-              <div class="main-carousel__spacer"></div>
-              <img
-                :src="getProjectURL(item, item['slider-image-src'])"
-                :alt="item.title"
-                class="main-carousel__image"
-              >
-              <!-- <router-link :to="getprojectLink(item)">View Project</router-link> -->
+  
+  <div class="home__container">
+    
+    <div class="container main-carousel">
+      <div class="container-content main-carousel__bg">
+          <h2 class="main-carousel__title" js-slider="title"></h2>  
+          <div class="main-carousel__container">
+            <div class="main-carousel__carousel" v-on:wheel="mouseScroll">
+              <div v-for="item in items" v-bind:key="item.id" class="main-carousel__cell" :data-project="item.title">
+                <div class="main-carousel__spacer"></div>
+                <img
+                  :src="getProjectURL(item, item['slider-image-src'])"
+                  :alt="item.title"
+                  class="main-carousel__image"
+                >
+                <!-- <router-link :to="getprojectLink(item)">View Project</router-link> -->
+              </div>
             </div>
           </div>
-        </div>
+      </div>
     </div>
+
+    <footer class="home__footer">
+      <div class="container home__footer-container">
+        <p class="home__footer-profession">font end developer</p>
+        <ul class="home__footer-social">
+          <li class="home__footer-social-link"><a href="#">instagram</a></li>
+          <li class="home__footer-social-link"><a href="#">dribble</a></li>
+          <li class="home__footer-social-link"><a href="#">linkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+
   </div>
+
 </template>
 
 <script>
@@ -49,7 +66,7 @@ export default {
         container: ".main-carousel__carousel",
         items: 1,
         slideBy: "page",
-        autoplay: false,
+        autoplay: true,
         axis: "vertical",
         gutter: 0,
         center: true,

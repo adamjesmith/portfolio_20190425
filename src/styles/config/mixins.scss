@@ -136,3 +136,22 @@
   }
   position: $position;
 }
+
+/**
+ * Forces an element to self-clear its children.
+ *
+ * Usage:
+ * .selector {
+ *   @include clearfix;
+ * }
+ */
+ @mixin clearfix() {
+  // stylelint-disable-next-line
+  *zoom: 1;
+
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}

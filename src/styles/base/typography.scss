@@ -11,11 +11,12 @@
    font-family: $FONT_BODY;
    -moz-osx-font-smoothing: grayscale;
    -webkit-font-smoothing: antialiased;
+   color: $TEXT_COLOR_LIGHT;
    font-weight: $WEIGHT_LIGHT;
+   letter-spacing: 0.6px;
    line-height: $LINE_HEIGHT_BODY;
    text-rendering: optimizeLegibility;
    text-size-adjust: 100%;
-   color: $TEXT_COLOR_LIGHT;
  }
  
  /**
@@ -28,6 +29,7 @@
    letter-spacing: $LETTER_SPACING_DISPLAY;
    line-height: $LINE_HEIGHT_DISPLAY;
    color: $TEXT_COLOR;
+   letter-spacing: 0;
  }
  
  .d2 {
@@ -37,6 +39,7 @@
    letter-spacing: $LETTER_SPACING_DISPLAY;
    line-height: $LINE_HEIGHT_DISPLAY;
    color: $TEXT_COLOR;
+   letter-spacing: 0;
  }
  
  .d3 {
@@ -46,6 +49,7 @@
    letter-spacing: $LETTER_SPACING_DISPLAY;
    line-height: $LINE_HEIGHT_DISPLAY;
    color: $TEXT_COLOR;
+   letter-spacing: 0;
  }
  
  /**
@@ -53,6 +57,7 @@
     */
  h1, h2, h3, h4, h5, h6 {
      text-transform: uppercase;
+     letter-spacing: 0;
  }
  h1,
  .h1 {

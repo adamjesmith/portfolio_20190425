@@ -1,23 +1,27 @@
 .header {
-    background-color: #444;
+    padding-top: $SPACING_L;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: $HEADER_HEIGHT;
-    border-top: $SPACING_M solid #ccc;
-    position: relative;
+    width: 100%;
+    z-index: 1;
 
     &__title {
         color: $TEXT_COLOR;
     }
 
     @include mq($from: small) {
-        border-top: $SPACING_XL solid #ccc;
+        padding-top: $SPACING_XL;
     }
 
     @include mq($from: medium) {
-        height: $HEADER_HEIGHT_L;
-        border-top: $SPACING_2XL solid #ccc;
+        height: $HEADER_HEIGHT_M;
+        padding-top: $SPACING_2XL;
     }
 
     @include mq($from: large) {
-        border-top: $SPACING_3XL solid #ccc;
+        height: $HEADER_HEIGHT_L;        
+        padding-top: $SPACING_3XL;
     }
 }
